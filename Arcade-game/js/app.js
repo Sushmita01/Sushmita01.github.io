@@ -55,6 +55,7 @@ Enemy.prototype.render = function() {
 var score = 0;
 var playerInit_x=200;
 var playerInit_y=410;
+var thresX=20;
 var Player = function(x, y) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
@@ -91,8 +92,8 @@ Player.prototype.checkCollisions = function() {
         var rect1 = playerBox;
         var rect2 = allEnemies[i].EnemyHitBox;
         //this is the collision check code from the MDN 2d collision check:
-        if (rect1.x < rect2.x + rect2.width &&
-            rect1.x + rect1.width > rect2.x &&
+        if (rect1.x+thresX < rect2.x + rect2.width &&
+            rect1.x + rect1.width > rect2.x+thresX &&
             rect1.y < rect2.y + rect2.height &&
             rect1.height + rect1.y > rect2.y) {
             console.log("collision detected!");
