@@ -1,0 +1,49 @@
+.myContainer {
+    width: 100%;
+    margin:auto;
+    padding: 10px;
+
+}
+
+svg {
+    width: 100%;
+    height:400px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.topic-text {
+    padding-top: 5px;
+}
+
+.left-chart-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.right-chart-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.dataset-link {
+    display: inline-block;
+}
+
+.list-item {
+    display: block;
+}
+
+.left-caption  {
+    color: rgb(72, 72, 72);
+    font-size: 14px;
+}
+
+.right-caption {
+    color: rgb(72, 72, 72);
+    font-size: 14px;
+}
+.chart {
+    background-color: rgb(251, 246, 239);
+}
